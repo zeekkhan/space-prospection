@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plate Builder</title>
+    <link rel="stylesheet" href="build.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar (details omitted) -->
+    </header>
+    
+    <section class="plate-builder">
+        <h1 class="section-title">Plate Builder</h1>
+        <div class="tabs">
+            <button class="tablinks active" onclick="openTab(event, 'roadCompliant')">Road Compliant Plates</button>
+            <button class="tablinks" onclick="openTab(event, 'showPlates')">Show Plates</button>
+        </div>
+        
+        
+        <div id="roadCompliant" class="tabcontent active">
+            <div class="builder-content">
+                <div class="plate-preview">
+                    <h2>Your Plate Preview</h2>
+                    <div class="plates">
+                        <img src="" alt="Plate 1">
+                        <img src="" alt="Plate 2">
+                    </div>
+                </div>
+                <div class="plate-options">
+                    <h2>Configure your plate options</h2>
+                    <form>
+                        <div class="option">
+                            <input type="text" id="reg" placeholder="Enter Your Reg">
+                        </div>
+                        <div class="option">
+                            <label>Type:</label>
+                            <label><input type="radio" name="type" checked> Car</label>
+                            <label><input type="radio" name="type"> Motorbike</label>
+                        </div>
+                        <div class="option">
+                            <label>Position:</label>
+                            <label><input type="radio" name="position" checked> Front Only</label>
+                            <label><input type="radio" name="position"> Rear Only</label>
+                            <label><input type="radio" name="position"> Both</label>
+                        </div>
+                        <div class="option">
+                            <label>Size</label>
+                            <select>
+                                <option>Standard Car Oblong (20.5x4.4in)</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Plate Material</label>
+                            <select>
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Font Style</label>
+                            <select>
+                                <option>Standard</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Border Style</label>
+                            <select>
+                                <option>None</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Left Badge</label>
+                            <select>
+                                <option>None</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="order-info">
+                        <p>Want your plates dispatched today? Order within <strong>3hrs 1min</strong></p>
+                        <p class="total-price">Total Price: <strong>£21.98</strong></p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="showPlates" class="tabcontent">
+            <div class="builder-content">
+                <div class="plate-preview">
+                    <h2>Your Show Plate Preview</h2>
+                    <p>This section is for designing show plates that are not road compliant.</p>
+                    <div class="plates">
+                        <img src="show_plate1.png" alt="Show Plate 1">
+                        <img src="show_plate2.png" alt="Show Plate 2">
+                    </div>
+                </div>
+                <div class="plate-options">
+                    <h2>Configure your show plate options</h2>
+                    <form>
+                        <div class="option">
+                            <label for="reg">Enter Your Reg</label>
+                            <input type="text" id="reg" placeholder="SHOWPL8">
+                        </div>
+                        <div class="option">
+                            <label>Type:</label>
+                            <label><input type="radio" name="type" checked> Car</label>
+                            <label><input type="radio" name="type"> Motorbike</label>
+                        </div>
+                        <div class="option">
+                            <label>Position:</label>
+                            <label><input type="radio" name="position" checked> Front Only</label>
+                            <label><input type="radio" name="position"> Rear Only</label>
+                            <label><input type="radio" name="position"> Both</label>
+                        </div>
+                        <div class="option">
+                            <label>Size</label>
+                            <select>
+                                <option>Standard Car Oblong (20.5x4.4in)</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Plate Material</label>
+                            <select>
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Font Style</label>
+                            <select>
+                                <option>Standard</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Border Style</label>
+                            <select>
+                                <option>None</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Left Badge</label>
+                            <select>
+                                <option>None</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="order-info">
+                        <p>Want your plates dispatched today? Order within <strong>3hrs 1min</strong></p>
+                        <p class="total-price">Total Price: <strong>£21.98</strong></p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Got a question - let us help</h2>
+        <p>With over 20 years experience in the industry we've most likely got the answer to your question</p>
+        <div class="faq-tabs">
+            <button class="faq-tab active" onclick="openFaq(event, 'general')">General FAQ</button>
+            <button class="faq-tab" onclick="openFaq(event, 'postDelivery')">Post and Delivery FAQ</button>
+            <button class="faq-tab" onclick="openFaq(event, 'orders')">Orders FAQ</button>
+            <button class="faq-tab" onclick="openFaq(event, 'fitting')">Fitting your plates</button>
+            <button class="faq-tab" onclick="openFaq(event, 'designs')">Plate Designs</button>
+        </div>
+        
+        <div class="faq-content active" id="general">
+            <div class="faq-item">
+                <h3>What is a Show Plate?</h3>
+                <p>A show plate is a plate where the design does not conform to road legal standards and therefore is not appropriate for fixing to a vehicle intended for road use. The plate builder will not allow the design to go outside of the UK road compliant criteria if you remain within the ‘Road compliant’ tab of the plate builder. Switching to the ‘show plate’ tab will drastically open up the design options available to the plate(s).</p>
+            </div>
+            <div class="faq-item">
+                <h3>Will the BS legal details appear on my plates?</h3>
+                <p>The road compliant tab of the plate builder restricts the customisation options to only those permitted within the legislation and will therefore include the required BS details. The show plate tab should be selected to allow further customisation or if you would like the BS details to be omitted, however the plate(s) would then be classified as show plates.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I ensure my plates are made to legal standards?</h3>
+                <p>This will depend on the jurisdiction in which you intend to use the plates on your vehicle. For the UK, details can be found on the UK government website.</p>
+            </div>
+        </div>
+    
+        <div class="faq-content" id="postDelivery">
+            <div class="faq-item">
+                <h3>What delivery options do you offer and how do they work?</h3>
+                <p>We offer an ‘Express’ next day delivery service or an ‘Economy’ 2-4 working day service. Both methods are fully tracked.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long will my order take to be delivered?</h3>
+                <p>We use the Evri delivery network via HubEurope. Orders placed by 3pm are dispatched on the same day for weekdays.</p>
+            </div>
+        </div>
+    
+        <div class="faq-content" id="orders">
+            <div class="faq-item">
+                <h3>Is any documentation required to place an order?</h3>
+                <p>No. It is as simple as creating your design / plate within the plate builder, adding to the cart and proceeding through checkout.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is the difference between Acrylic & (regular) ABS plates?</h3>
+                <p>Acrylic plates are more durable and resistant to weather conditions.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I amend my order?</h3>
+                <p>Yes, you can amend your order before it is dispatched.</p>
+            </div>
+        </div>
+    
+        <div class="faq-content" id="fitting">
+            <div class="faq-item">
+                <h3>How do I fit my plate(s) using a car fixing kit?</h3>
+                <p>You will need a drill & drill bit to fit plates using either our car or bike number plate fixing kits.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I fix plates to a vehicle using sticky pads?</h3>
+                <p>Sticky pads provide a cleaner finish and can be used instead of screws.</p>
+            </div>
+        </div>
+    
+        <div class="faq-content" id="designs">
+            <div class="faq-item">
+                <h3>How do I design my plate?</h3>
+                <p>You can customize your plate by choosing the type, position, size, material, font style, border style, and left badge using our plate builder.</p>
+            </div>
+        </div>
+    
+        <div class="contact-us">
+            <p>Can't find the answer you're looking for? Send us an email. 8 AM – 4 PM MONDAY TO FRIDAY</p>
+            <button>Send Us a Message</button>
+        </div>
+    </section>
+    
+
+    <footer>
+        <!-- Footer content (details omitted) -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

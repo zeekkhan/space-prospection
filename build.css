@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    background-color: #444;
+    color: white;
+}
+
+.plate-builder {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff0000;
+}
+h2 {
+    color: #fff;
+}
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+}
+.tabs {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.tablinks {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1.1em;
+
+}
+
+
+.tablinks.active {
+    background-color: #ff0000;
+}
+
+.builder-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin: 20px auto;
+    /* background: #fff; */
+    background-color: #222;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    padding: 20px;
+
+
+}
+
+.plate-preview, .plate-options {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.plates img {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.plate-options h2 {
+    margin-bottom: 20px;
+}
+.plate-options form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.option{
+    margin-bottom: 15px;
+}
+.opt input{
+    margin-bottom: 15px;
+    height: 40px;
+    max-width: 500px;
+
+}
+
+.option label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.option input[type="text"], .option select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 
+}
+
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.order-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.total-price {
+    font-size: 18px;
+    color: #ff0000;
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+.faq {
+    background-color: #222;
+    text-align: center;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-tabs {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.faq-tab {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    font-size: 1.1em;
+    margin-right: 5px;
+}
+
+.faq-tab:last-child {
+    margin-right: 0;
+}
+
+.faq-tab.active {
+    background-color: #ff0000;
+}
+
+.faq-content {
+    text-align: left;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+    display: none;
+    margin-top: 20px;
+}
+
+.faq-content.active {
+    display: block;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+
+.faq-item h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+    
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.faq-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
+.contact-us {
+    text-align: center;
+
+    margin-top: 30px;
+}
+.contact-us p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-us button {
+    background-color: #ff5500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+
+/* Responsive Design */
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    .builder-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plate-preview, .plate-options {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .plate-builder {
+        padding: 30px 10px;
+    }
+
+    .faq-tabs {
+        flex-direction: column;
+    }
+
+    .faq-tab {
+        margin-bottom: 10px;
+    }
+
+    .faq-content {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Extra Small Devices (small phones) */
+@media (max-width: 480px) {
+    .plate-builder h1, .faq h2 {
+        font-size: 24px;
+    }
+
+    .plate-options form {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
